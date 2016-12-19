@@ -142,12 +142,12 @@ sudo chown -R www-data:www-data /var/www/MISP/app/Config
 sudo chmod -R 750 /var/www/MISP/app/Config
 
 # Generate a GPG encryption key.
-sudo -u www-data mkdir /var/www/MISP/.gnupg
-sudo chmod 700 /var/www/MISP/.gnupg
-sudo -u www-data gpg --homedir /var/www/MISP/.gnupg --gen-key
+#sudo -u www-data mkdir /var/www/MISP/.gnupg
+#sudo chmod 700 /var/www/MISP/.gnupg
+#sudo -u www-data gpg --homedir /var/www/MISP/.gnupg --gen-key
 
 # And export the public key to the webroot
-sudo -u www-data sh -c "gpg --homedir /var/www/MISP/.gnupg --export --armor YOUR-KEYS-EMAIL-HERE > /var/www/MISP/app/webroot/gpg.asc"
+#sudo -u www-data sh -c "gpg --homedir /var/www/MISP/.gnupg --export --armor YOUR-KEYS-EMAIL-HERE > /var/www/MISP/app/webroot/gpg.asc"
 
 # To make the background workers start on boot
 sudo chmod +x /var/www/MISP/app/Console/worker/start.sh
