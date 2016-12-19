@@ -10,6 +10,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 gitdir=$PWD
 
+echo -e "${YELLOW}Updating system...Please wait.${NC}"
 apt-get -qq update && sudo apt-get upgrade -y && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y
 
 echo -e "${YELLOW}Installing dependencies...Please wait.${NC}"
