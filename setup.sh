@@ -132,10 +132,10 @@ sudo -u www-data cp -a /var/www/MISP/app/Config/config.default.php /var/www/MISP
 
 
 # Configure the fields in the newly created files:
-sudo -u www-data vim /var/www/MISP/app/Config/database.php
+#sudo -u www-data vim /var/www/MISP/app/Config/database.php
 
 # Change base url in config.php
-sudo -u www-data vim /var/www/MISP/app/Config/config.php
+#sudo -u www-data vim /var/www/MISP/app/Config/config.php
 
 # and make sure the file permissions are still OK
 sudo chown -R www-data:www-data /var/www/MISP/app/Config
