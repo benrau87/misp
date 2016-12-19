@@ -96,7 +96,7 @@ sudo tee -a /tmp/misp-ssl.conf <<EOF
         ServerSignature Off
 </VirtualHost>
 
-<VirtualHost ipaddr:443>
+<VirtualHost $ipaddr:443>
         ServerAdmin admin@misp.local
         ServerName $ipaddr
         DocumentRoot /var/www/MISP/app/webroot
